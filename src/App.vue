@@ -7,9 +7,8 @@
       <router-link to='/search' class="li">Search</router-link>
     </ul>
   </nav>
-    <router-View>
+    <router-View />
 
-    </router-View>
     <!-- <footer>Created With ❤ By Victor Patrick </footer> -->
 </div>
 </template>
@@ -37,7 +36,7 @@ header {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    /* padding-right: calc(var(--section-gap) / 2); */
   }
 
   .logo {
