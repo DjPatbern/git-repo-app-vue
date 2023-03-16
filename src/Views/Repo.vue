@@ -3,7 +3,7 @@
    <NotFound />
 </div> -->
 
-  <div v-if="loading === false" class="details-container">
+  <div  class="details-container">
     <div class="repo-datas">
       <img
         src="https://avatars.githubusercontent.com/u/99277508?v=4"
@@ -30,18 +30,13 @@
     </div>
   </div>
 
-  <div v-else>
-    <div>
-      <NotFound />
-    </div>
-  </div>
+
 </template>
 
 <script>
 import { ref } from "@vue/reactivity";
 import { useRoute } from "vue-router";
 import { onMounted } from "@vue/runtime-core";
-import NotFound from "./NotFound.vue";
 export default {
   setup() {
     const repo = ref({});
@@ -55,11 +50,6 @@ export default {
         .then((response) => response.json())
         .then((json) => (repo.value = json))
         .then((loading.value = false))
-        .catch(function (error) {
-          if (error.response.status === 404) {
-            return loading.value = true;
-          }
-        })
         // .finally(() => (loading.value = false));
     };
     onMounted(() => {
@@ -72,7 +62,6 @@ export default {
       
     };
   },
-  components: { NotFound },
 };
 </script>
 

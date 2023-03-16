@@ -62,7 +62,6 @@ export default {
       event.preventDefault();
       fetchProfile();
     };
-    onMounted(() => {});
     return {
       profile,
       loading,
