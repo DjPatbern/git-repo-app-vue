@@ -1,29 +1,9 @@
-# vue-router-demo
+# GitHub-Profile App
 
-This template should help get you started developing with Vue 3 in Vite.
+This is my 3rd semester Altschool Africa Exam Project
 
-## Recommended IDE Setup
+## This is the live link
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+https://git-repo-app-vue.vercel.app/
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
