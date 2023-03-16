@@ -2,6 +2,8 @@
 
 This is my 3rd semester Altschool Africa Exam Project
 
-## This Project was made with Vue.js
+## This is the live link
+
+https://git-repo-app-vue.vercel.app/
 
 
