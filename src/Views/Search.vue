@@ -3,7 +3,7 @@
     <div class="search-flex">
       <div>
         <input class="search-div" type="text" v-model="search" placeholder="Search Here" autofocus />
-        <button @click="callSearch">Enter</button>
+        <button @click="callSearch" class="search-btn">Enter</button>
         <div v-if="loading" class="search-user-text">Search your Github Username here</div>
       </div>
     </div>
@@ -44,7 +44,6 @@
 
 <script>
 import { ref } from "@vue/reactivity";
-import { onMounted } from "@vue/runtime-core";
 export default {
   setup() {
     const profile = ref([]);
@@ -73,7 +72,7 @@ export default {
 </script>
 
 <style>
-.search-div, .search-flex button {
+.search-div {
   margin-top: 5px;
   outline: none;
   width: 100%;
@@ -81,15 +80,29 @@ export default {
   padding: 15px  0 15px 0;
   border-radius: 15px;
   border: none;
-  background-color: rgb(36, 9, 61);
-  color: aqua;
-  border: 1px solid rgb(10, 190, 190);
+  background-color: white;
+  color: rgb(36, 9, 61);
   font-weight: bold;
+  margin-bottom: 20px
 }
 
-.search-div::placeholder{
-    color: rgb(10, 190, 190);
+.search-btn{
+  width: 120%;
+  text-align: center;
+  padding: 15px  0 15px 0;
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  color: rgb(36, 9, 61);
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  outline: none;
 }
+
+/* .search-div::placeholder{
+    color: rgb(10, 190, 190);
+} */
 
 .search-flex button:hover{
   cursor: pointer;
@@ -145,7 +158,7 @@ export default {
 }
 
 .search-user-text{
-  color: aqua;
+  color: white;
 }
 
 @media (max-width: 600px){
@@ -155,6 +168,14 @@ export default {
 
   .pro-img {
  max-width: 100%;
+}
+
+.search-btn{
+  max-width: 100%;
+}
+
+.search-div{
+  max-width: 80%;
 }
 }
 
