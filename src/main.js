@@ -31,8 +31,10 @@ const router = createRouter({
       path: "/repos/:repoId",
       component: Repo,
     },
-    { path: "/:pathMatch(.*)*", name: "not-found", component: NotFound },
-    { path: "/:catchAll(.*)", redirect: "/404" },
+    { path: "/404", 
+    name: "not-found", 
+    component: NotFound },
+    {path: '/:catchAll(.*)', redirect: '/404'}
   ],
 });
 
