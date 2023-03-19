@@ -4,6 +4,6 @@ This is my 3rd semester Altschool Africa Exam Project
 
 ## This is the live link
 
-https://git-repo-app-vue.vercel.app/
+https://github-repos-vue.web.app/
 
 
